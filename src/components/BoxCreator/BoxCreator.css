@@ -1,0 +1,60 @@
+.BoxCreator{
+    width: 100%;
+    height: 83vh;
+    background-color: #0C1F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Value Serif Pro Medium";
+}
+
+.content-bc{
+    display: flex;
+    align-items: center;
+    background-color: #FAECE3;
+    border-radius: 30px 20px 20px 30px;
+    width: 91%;
+    height: 80%;
+}
+
+.img-bc{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.creator-bc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    width: 90%;
+    padding: 0 60px 0 60px;
+    gap: 17px;
+}
+
+.title-bc{
+    font-size: 280%;
+    font-weight: 100;
+}
+
+.btn-bc{
+    border: none;
+    background-color: #D88D64;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: "Value Serif Pro Medium";
+    color: white;
+    font-size: 110%;
+    border: 1px solid transparent;
+    transition: 0.2s;
+}
+
+.btn-bc:hover{
+    border: 1px solid #D88D64;
+    background-color: transparent;
+    color: #0C1F3F;
+}

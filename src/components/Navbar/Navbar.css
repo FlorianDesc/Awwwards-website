@@ -1,0 +1,83 @@
+@import url(https://db.onlinewebfonts.com/c/a27914d342878e6026ec23bc1ae02f54?family=Wigrum+Web+Medium);
+
+.navbar{
+    display: flex;
+    font-family: "Wigrum Web";
+    height: 50px;
+    padding: 5px 0px;
+}
+
+.tabs-navbar{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 40%;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+}
+
+.tab{
+    position: relative;
+    padding: 20px 0;
+    font-size: 90%;
+}
+
+.tab::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #d88d64;
+    transition: 0.2s;
+}
+
+.tab:hover::after{
+    top: 93%;
+}
+
+li:first-child{
+    margin-left: 60px;
+}
+
+.title-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 270%;
+    font-weight: 600;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.icons-list{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 40%;
+}
+
+.icons-list img{
+    width: 20px;
+    aspect-ratio: 1;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icons-list img:hover{
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+
+img:nth-child(3n){
+    margin-right: 13%;
+}

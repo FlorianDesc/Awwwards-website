@@ -1,0 +1,87 @@
+.Collection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "Value Serif Pro Medium";;
+    background-color: #faece3;
+  }
+
+  .title-Collection{
+    font-size: 290%;
+    font-weight: 100;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    aspect-ratio: 0.5;
+    margin: 0 50px;
+    padding: 20px 0;
+  }
+  
+  .box img{
+    width: 150px;
+    aspect-ratio: 0.5;
+    padding: 40px;
+  }
+
+  .box img:hover{
+    border-radius: 4%;
+    background-color: white;
+  }
+
+  .name-product{
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 130%;
+    transition: 0.4s;
+  }
+
+  .box:hover .name-product{
+      opacity: 1;
+  }
+  
+  .items {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    cursor: pointer;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  .items {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .items::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  .btn-product{
+    border: none;
+    background-color: #0C1F3F;
+    color: white;
+    font-family: "Value Serif Pro Medium";
+    font-size: 110%;
+    border-radius: 20px;
+    padding: 9px 30px;
+    margin-top: 10%;
+    transition: 0.2s;
+    border: 1px solid transparent;
+  }
+
+  .btn-product:hover{
+    border: 1px solid #0C1F3F;
+    color: #0C1F3F;
+    background-color: transparent;
+  }

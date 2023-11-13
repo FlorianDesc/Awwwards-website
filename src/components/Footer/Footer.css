@@ -1,0 +1,254 @@
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #0C1F3F;
+}
+
+.top-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 35%;
+    margin-bottom: 2%;
+}
+
+.title-top-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15%;
+    padding: 3% 0 6% 3%;
+    margin-right: 4%;
+    margin-left: 1%;
+}
+
+.title-footer{
+    font-family: "Value Serif Pro Medium";
+    color: white;
+    font-size: 200%;
+    width: 100%;
+}
+
+.btn-title-footer{
+    padding: 9px 30px;
+    border: 1px solid transparent;
+    background-color: #D88D64;
+    color: white;
+    border-radius: 20px;
+    font-size: 100%;
+    font-family: "Value Serif Pro Medium";
+    transition: 0.3s;
+}
+
+.btn-title-footer:hover{
+    background-color: transparent;
+    border: 1px solid #D88D64;
+}
+
+.galerie-link{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 3.5%;
+}
+
+.img-insta{
+    position: relative;
+    width: 19.5%;
+    aspect-ratio: 1;
+    border-radius: 6%;
+    transition: 0.3s;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.img-insta:after{
+    opacity: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.2s;
+}
+
+.img-insta:hover:after, .img-insta:hover .img-insta-hover{
+    opacity: 1;
+}
+
+
+.img-insta-hover{
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    aspect-ratio: 1.3;
+    transition: 0.2s;
+    z-index: 999;
+}
+
+
+.img-insta img:last-child{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 5%;
+}
+
+
+.middle-footer{
+    display: flex;
+    width: 100%;
+    height: 35%;
+}
+
+.left-link, .middle-link, .right-link{
+    display: flex;
+    flex-direction: column;
+    gap: 6%;
+    padding: 2% 0 2% 3.7%;
+    width: 28%;
+}
+
+.btn-footer{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 80%;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-footer:hover{
+    color: #D88D64;
+}
+
+.btn-footer.first{
+    position: relative;
+    padding: 3% 0%;
+}
+
+.btn-footer.first:after{
+    position: absolute;
+    content: "";
+    top: 37px;
+    left: 0;
+    width: 450px;
+    height: 0.5px;
+    background-color: #D88D64;
+}
+
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: #0C1F3F;
+}
+
+.subscribe-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;
+    height: 100%;
+    width: 33%;
+    padding-left: 3.5%;
+}
+
+.label-subscribe{
+    font-family: "Value Serif Pro Medium";
+    font-size: 130%;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.input{
+    display: flex;
+    gap: 2%;
+}
+
+.email-subscribe{
+    width: 230px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+
+.email-subscribe::placeholder{
+    text-align: left;
+    color: white;
+    font-family: "Value Serif Pro Medium";
+}
+
+.btn-sign-up{
+    background-color: white;
+    color: #0C1F3F;
+    padding: 9px 30px;
+    border-radius: 20px;
+    border: none;
+    font-family: "Value Serif Pro Medium";
+    transition: 0.2s;
+}
+
+.btn-sign-up:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+    height: 100%;
+}
+
+.logo img{
+    width: 15%;
+}
+
+.contact{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    padding-right: 2.5%;
+    padding-left: 1%;
+    gap: 15%;
+}
+
+.contact img{
+    width: 35%;
+}
+
+.icons-contact svg{
+    width: 37px;
+    aspect-ratio: 1;
+    color: white;
+}
+
+.icon{
+    display: flex;
+    gap: 20%;
+    padding: 5%;
+}
+
+.text{
+    font-size: 110%;
+}
+
+.text{
+    color: white;
+}

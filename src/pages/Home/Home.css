@@ -1,0 +1,73 @@
+.bannerAnimate{
+    background-color: #FAECE3;
+    overflow: hidden;
+    font-family: "Value Serif Pro Medium";
+}
+
+.bannerContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    animation: bannerAnimation 25s infinite linear;
+}
+
+.bannerContent:hover{
+    animation-play-state: paused;
+}
+
+.bannerContent>li{
+    padding: 0 40px;
+    min-width: 25%;
+    font-size: 90%;
+    color: #0C1F3F;
+}
+
+.ad-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    background-color: #0C1F3F;
+    font-family: "Value Serif Pro Medium";
+    gap: 7%;
+}
+
+.title-ad-container{
+    font-size: 450%;
+    font-weight: 100;
+    color: white;
+}
+
+.ad-container p{
+    color: white;
+    font-size: 120%;
+    font-weight: 100;
+    text-align: center;
+}
+
+.btn-ad-container{
+    background-color: #D88D64;
+    color: white;
+    padding: 9px 32px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-family: "Value Serif Pro Medium";
+    font-size: 100%;
+    transition: 0.2s;
+}
+
+.btn-ad-container:hover{
+    background-color: transparent;
+    border: 1px solid #D88D64;
+    color: white;
+}
+
+@keyframes bannerAnimation{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-120%);
+    }
+}
